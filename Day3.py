@@ -1,7 +1,5 @@
 # Summing Elements of Two Lists
 
-import numpy as np
-import operator
 Python_devs = [100, 304, 345, 121212, 45421]
 JavaScript_devs = [22, 3, 5654, 876765, 32]
 
@@ -18,9 +16,11 @@ all_devs = [
 all_devs = [x + y for x, y in zip(Python_devs, JavaScript_devs)]
 
 # Using maps
+import operator
 all_devs = list(map(operator.add, Python_devs, JavaScript_devs))
 
 # Using Numpy 💪 💪
+import numpy as np
 all_devs = np.add(Python_devs, JavaScript_devs)
 
-print(all_devs)
+
