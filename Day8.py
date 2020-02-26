@@ -1,6 +1,5 @@
 # Sorting a list of Dictionaries
 
-from operator import itemgetter
 csv_mapping_list = [
     {"Name": "Jeremy", "Age": 25, "Favorite Color": "Blue"},
     {"Name": "Ally", "Age": 41, "Favorite Color": "Magenta"},
@@ -22,6 +21,7 @@ csv_mapping_list.sort(key=lambda item: item.get("Age"))
 
 
 # List sorting using itemgetter
+from operator import itemgetter
 f = itemgetter('Name')
 csv_mapping_list.sort(key=f)
 
