@@ -1,7 +1,5 @@
 # Sorting a List of Strings
 
-from functools import cmp_to_key
-import locale
 my_list = ["Bananas", "Oranges", "Grapes", "Cherries"]
 
 # Brute force Method using bubble sort
@@ -27,6 +25,8 @@ my_list = sorted(my_list)
 my_list = sorted(my_list, key=str.casefold)
 
 # Custom list using current locale
+from functools import cmp_to_key
+import locale
 my_list = sorted(my_list, key=cmp_to_key(locale.strcoll))
 
 # Custom reverse list sort using casefold
